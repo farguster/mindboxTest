@@ -1,0 +1,4 @@
+select g.name,cat.name
+from Good g left join GoodCat gc 
+on gc.goodId = g.id 
+INNER join Category cat on gc.catId = cat.id
